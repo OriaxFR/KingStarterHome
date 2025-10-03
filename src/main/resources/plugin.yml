@@ -1,0 +1,22 @@
+name: KingStarterHome
+version: 1.0
+main: fr.oriax.kingstarterhome.PluginPrincipal
+api-version: 1.8
+author: Oriax
+description: Plugin de base automatique avec teleportation aleatoire
+website: https://oriax.fr
+softdepend: [Factions, Essentials]
+
+commands:
+  basehome:
+    description: Commande principale du plugin
+    usage: /basehome
+    permission: kingstarterhome.use
+
+permissions:
+  kingstarterhome.use:
+    description: Permission pour utiliser le plugin
+    default: true
+  kingstarterhome.admin:
+    description: Permission administrateur
+    default: op

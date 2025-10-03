@@ -1,0 +1,162 @@
+# Configuration KingStarterHome
+# Plugin de base automatique avec teleportation aleatoire
+
+# Distances et limites
+distance-minimale-spawn: 1000
+distance-minimale-coffre: 50
+distance-minimale-claim-ennemi: 32
+distance-minimale-base-existante: 100
+profondeur-minimale: 50
+profondeur-maximale: 20
+taille-bordure-monde: 10000
+tentatives-maximales: 50
+
+# Configuration des coffres
+coffres:
+  nombre: 4
+  contenu:
+    coffre1:
+      pancarte: "&4&lBois|&c&lPierre"
+      item1:
+        material: WOOD
+        quantite: 64
+        chance: 100
+      item2:
+        material: LOG
+        quantite: 32
+        chance: 100
+      item3:
+        material: COBBLESTONE
+        quantite: 64
+        chance: 100
+      item4:
+        material: STONE
+        quantite: 32
+        chance: 90
+      item5:
+        material: DIRT
+        quantite: 32
+        chance: 85
+      item6:
+        material: SAND
+        quantite: 16
+        chance: 70
+      item7:
+        material: GRAVEL
+        quantite: 16
+        chance: 65
+      item8:
+        material: GLASS
+        quantite: 16
+        chance: 60
+    coffre2:
+      pancarte: "&4&lMinerais|&c&lOutils"
+      item1:
+        material: COAL
+        quantite: 24
+        chance: 100
+      item2:
+        material: IRON_INGOT
+        quantite: 16
+        chance: 85
+      item3:
+        material: IRON_PICKAXE
+        quantite: 1
+        chance: 80
+      item4:
+        material: IRON_AXE
+        quantite: 1
+        chance: 75
+      item5:
+        material: IRON_SHOVEL
+        quantite: 1
+        chance: 70
+      item6:
+        material: IRON_SWORD
+        quantite: 1
+        chance: 65
+      item7:
+        material: BUCKET
+        quantite: 2
+        chance: 70
+      item8:
+        material: FLINT_AND_STEEL
+        quantite: 1
+        chance: 60
+    coffre3:
+      pancarte: "&4&lNourriture"
+      item1:
+        material: BREAD
+        quantite: 16
+        chance: 100
+      item2:
+        material: COOKED_BEEF
+        quantite: 12
+        chance: 85
+      item3:
+        material: APPLE
+        quantite: 8
+        chance: 75
+      item4:
+        material: SEEDS
+        quantite: 16
+        chance: 90
+      item5:
+        material: POTATO_ITEM
+        quantite: 12
+        chance: 80
+      item6:
+        material: CARROT_ITEM
+        quantite: 12
+        chance: 80
+      item7:
+        material: WATER_BUCKET
+        quantite: 1
+        chance: 70
+      item8:
+        material: BOWL
+        quantite: 4
+        chance: 60
+    coffre4:
+      pancarte: "&4&lTorches|&c&lUtiles"
+      item1:
+        material: TORCH
+        quantite: 64
+        chance: 100
+      item2:
+        material: BED
+        quantite: 1
+        chance: 100
+      item3:
+        material: WORKBENCH
+        quantite: 1
+        chance: 100
+      item4:
+        material: FURNACE
+        quantite: 2
+        chance: 95
+      item5:
+        material: CHEST
+        quantite: 4
+        chance: 90
+      item6:
+        material: LADDER
+        quantite: 16
+        chance: 80
+      item7:
+        material: SIGN
+        quantite: 8
+        chance: 75
+      item8:
+        material: WOOD_DOOR
+        quantite: 2
+        chance: 70
+
+# Messages du plugin
+messages:
+  cooldown-actif: "&cVous devez attendre encore {temps} avant de pouvoir utiliser cet item !"
+  teleportation-reussie: "&aVous avez ete teleporte vers votre nouvelle base !"
+  echec-teleportation: "&cImpossible de trouver un emplacement valide pour votre base."
+  base-creee: "&aVotre base a ete generee avec succes !"
+  home-defini: "&aVotre home a ete defini a cet emplacement !"
+  base-existante-detectee: "&cUne base existe deja a proximite de cet emplacement."
